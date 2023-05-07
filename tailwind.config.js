@@ -12,7 +12,13 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: {
+          500: '#fc0707',
+          600: '#DE0202',
+        },
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require('@tailwindcss/aspect-ratio')],
+};
